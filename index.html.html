@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MV Portal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    padding:20px;
+    background:linear-gradient(-45deg,#ff6b6b,#feca57,#48dbfb,#5f27cd,#1dd1a1);
+    background-size:400% 400%;
+    animation:bg 15s ease infinite;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.header{
+    grid-column:1/span 2;
+    text-align:center;
+    color:white;
+    padding:30px;
+    border-radius:25px;
+    background:rgba(255,255,255,.2);
+    backdrop-filter:blur(10px);
+}
+
+.header h1{
+    font-size:50px;
+}
+
+.header p{
+    margin:10px 0 20px;
+}
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.search-box input{
+    width:60%;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+}
+
+.search-box button{
+    padding:15px 25px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.section{
+    background:rgba(255,255,255,.2);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:20px;
+}
+
+.section h2{
+    color:white;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.card{
+    width:120px;
+    background:white;
+    border-radius:15px;
+    text-align:center;
+    text-decoration:none;
+    color:#333;
+    padding:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.logo{
+    font-size:40px;
+}
+
+.name{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.full{
+    grid-column:1/span 2;
+}
+
+.footer{
+    grid-column:1/span 2;
+    text-align:center;
+    color:white;
+    padding:15px;
+}
+
+@media(max-width:768px){
+.container{
+grid-template-columns:1fr;
+}
+.header,.full,.footer{
+grid-column:auto;
+}
+.search-box input{
+width:100%;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>🌈 MV PORTAL 🌈</h1>
+<p>Your Personal Web Hub</p>
+
+<form class="search-box"
+action="https://www.google.com/search"
+method="GET"
+target="_blank">
+
+<input type="text"
+name="q"
+placeholder="Search Google...">
+
+<button type="submit">🔍 Search</button>
+
+</form>
+</div>
+
+<!-- MAIL -->
+
+<div class="section">
+<h2>📧 Mail Services</h2>
+<div class="links">
+
+<a class="card" href="https://mail.google.com" target="_blank">
+<div class="logo">📧</div>
+<div class="name">Gmail</div>
+</a>
+
+<a class="card" href="https://mail.yahoo.com" target="_blank">
+<div class="logo">💌</div>
+<div class="name">Yahoo</div>
+</a>
+
+</div>
+</div>
+
+<!-- AI -->
+
+<div class="section">
+<h2>🤖 AI Tools</h2>
+<div class="links">
+
+<a class="card" href="https://chatgpt.com" target="_blank">
+<div class="logo">🤖</div>
+<div class="name">ChatGPT</div>
+</a>
+
+<a class="card" href="https://gemini.google.com" target="_blank">
+<div class="logo">✨</div>
+<div class="name">Gemini</div>
+</a>
+
+<a class="card" href="https://copilot.microsoft.com" target="_blank">
+<div class="logo">🧠</div>
+<div class="name">Copilot</div>
+</a>
+
+</div>
+</div>
+
+<!-- SHOPPING -->
+
+<div class="section">
+<h2>🛒 Shopping</h2>
+<div class="links">
+
+<a class="card" href="https://www.amazon.in" target="_blank">
+<div class="logo">🛒</div>
+<div class="name">Amazon</div>
+</a>
+
+<a class="card" href="https://www.flipkart.com" target="_blank">
+<div class="logo">🛍️</div>
+<div class="name">Flipkart</div>
+</a>
+
+<a class="card" href="https://www.meesho.com" target="_blank">
+<div class="logo">🏬</div>
+<div class="name">Meesho</div>
+</a>
+
+<a class="card" href="https://www.myntra.com" target="_blank">
+<div class="logo">👗</div>
+<div class="name">Myntra</div>
+</a>
+
+</div>
+</div>
+
+<!-- CAB -->
+
+<div class="section">
+<h2>🚖 Cab Booking</h2>
+<div class="links">
+
+<a class="card" href="https://www.uber.com" target="_blank">
+<div class="logo">🚖</div>
+<div class="name">Uber</div>
+</a>
+
+<a class="card" href="https://www.olacabs.com" target="_blank">
+<div class="logo">🚕</div>
+<div class="name">Ola</div>
+</a>
+
+<a class="card" href="https://www.rapido.bike" target="_blank">
+<div class="logo">🏍️</div>
+<div class="name">Rapido</div>
+</a>
+
+</div>
+</div>
+
+<!-- TRAVEL -->
+
+<div class="section">
+<h2>🚆 Travel</h2>
+<div class="links">
+
+<a class="card" href="https://www.irctc.co.in" target="_blank">
+<div class="logo">🚆</div>
+<div class="name">IRCTC</div>
+</a>
+
+<a class="card" href="https://www.redbus.in" target="_blank">
+<div class="logo">🚌</div>
+<div class="name">RedBus</div>
+</a>
+
+<a class="card" href="https://www.makemytrip.com" target="_blank">
+<div class="logo">✈️</div>
+<div class="name">MMT</div>
+</a>
+
+</div>
+</div>
+
+<!-- TEMPLES -->
+
+<div class="section">
+<h2>🙏 Temple Services</h2>
+<div class="links">
+
+<a class="card" href="https://www.tirumala.org" target="_blank">
+<div class="logo">🙏</div>
+<div class="name">Tirupati</div>
+</a>
+
+<a class="card" href="https://www.sai.org.in" target="_blank">
+<div class="logo">🕉️</div>
+<div class="name">Shirdi</div>
+</a>
+
+</div>
+</div>
+
+<!-- SOCIAL MEDIA -->
+
+<div class="section full">
+<h2>📱 Social Media</h2>
+<div class="links">
+
+<a class="card" href="https://web.whatsapp.com" target="_blank"><div class="logo">💬</div><div class="name">WhatsApp</div></a>
+<a class="card" href="https://www.youtube.com" target="_blank"><div class="logo">▶️</div><div class="name">YouTube</div></a>
+<a class="card" href="https://www.facebook.com" target="_blank"><div class="logo">📘</div><div class="name">Facebook</div></a>
+<a class="card" href="https://www.instagram.com" target="_blank"><div class="logo">📷</div><div class="name">Instagram</div></a>
+<a class="card" href="https://x.com" target="_blank"><div class="logo">𝕏</div><div class="name">X</div></a>
+
+</div>
+</div>
+
+<!-- NEWS -->
+
+<div class="section">
+<h2>📰 Telugu News</h2>
+<div class="links">
+
+<a class="card" href="https://www.eenadu.net" target="_blank"><div class="logo">📰</div><div class="name">Eenadu</div></a>
+<a class="card" href="https://www.sakshi.com" target="_blank"><div class="logo">📺</div><div class="name">Sakshi</div></a>
+<a class="card" href="https://www.ntvtelugu.com" target="_blank"><div class="logo">📡</div><div class="name">NTV</div></a>
+<a class="card" href="https://tv9telugu.com" target="_blank"><div class="logo">9️⃣</div><div class="name">TV9</div></a>
+<a class="card" href="https://www.andhrajyothy.com" target="_blank"><div class="logo">🗞️</div><div class="name">ABN</div></a>
+<a class="card" href="https://www.tv5news.in" target="_blank"><div class="logo">5️⃣</div><div class="name">TV5</div></a>
+
+</div>
+</div>
+
+<!-- BANKING -->
+
+<div class="section">
+<h2>🏦 Banking & Payments</h2>
+<div class="links">
+
+<a class="card" href="https://retail.onlinesbi.sbi" target="_blank"><div class="logo">🏦</div><div class="name">SBI</div></a>
+
+<a class="card" href="https://netbanking.hdfcbank.com" target="_blank"><div class="logo">💳</div><div class="name">HDFC</div></a>
+
+<a class="card" href="https://www.icicibank.com" target="_blank"><div class="logo">🏛️</div><div class="name">ICICI</div></a>
+
+<a class="card" href="https://www.axisbank.com" target="_blank"><div class="logo">🏦</div><div class="name">Axis</div></a>
+
+<a class="card" href="https://www.iob.in" target="_blank"><div class="logo">🏛️</div><div class="name">IOB</div></a>
+
+<a class="card" href="https://paytm.com" target="_blank"><div class="logo">💰</div><div class="name">Paytm</div></a>
+
+<a class="card" href="https://www.phonepe.com" target="_blank"><div class="logo">📱</div><div class="name">PhonePe</div></a>
+
+<a class="card" href="https://pay.google.com" target="_blank"><div class="logo">💵</div><div class="name">GPay</div></a>
+
+</div>
+</div>
+
+<div class="footer">
+© 2026 MV Portal | Personal Website
+</div>
+
+</div>
+
+<script>
+console.log("MV Portal Loaded Successfully");
+</script>
+
+</body>
+</html>
