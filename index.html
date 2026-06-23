@@ -105,7 +105,17 @@ body{
     gap:15px;
     flex-wrap:nowrap;
 }
-.card{
+.app-card{
+    width:90px;
+    height:90px;
+    background:white;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+    .card{
     width:120px;
     background:white;
     border-radius:18px;
@@ -484,30 +494,15 @@ placeholder="Search Google...">
 
 <h2>☁️ My Cloud Storage</h2>
 
-<div class="cloud-links">
+<h2>☁️ My Cloud Storage</h2>
 
-<a class="card" href="https://drive.google.com" target="_blank">
-<div class="logo">📂</div>
-<div class="name">Google Drive</div>
-</a>
-
-<a class="card" href="https://photos.google.com" target="_blank">
-<div class="logo">📸</div>
-<div class="name">Google Photos</div>
-</a>
-
-<a class="card" href="https://www.dropbox.com" target="_blank">
-<div class="logo">📦</div>
-<div class="name">Dropbox</div>
-</a>
-
-<a class="card" href="https://onedrive.live.com" target="_blank">
-<div class="logo">☁️</div>
-<div class="name">OneDrive</div>
-</a>
-
+<div class="apps-row">
+  <a href="#"><div class="app-card">Google Drive</div></a>
+  <a href="#"><div class="app-card">Google Photos</div></a>
+  <a href="#"><div class="app-card">Dropbox</div></a>
+  <a href="#"><div class="app-card">OneDrive</div></a>
 </div>
-<!-- NEWS -->
+    <!-- NEWS -->
 
 <div class="section">
 <h2>📰 Telugu News</h2>
