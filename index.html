@@ -173,7 +173,16 @@ width:100%;
     text-align:center;
     min-width:160px;
     box-shadow:0 2px 5px rgba(0,0,0,0.1);
-}   
+} 
+    .app-card img{
+  width:35px;
+  height:35px;
+}
+
+.app-card p{
+  margin:8px 0 0;
+  font-size:14px;
+}
 </style>
 </head>
 
@@ -538,19 +547,31 @@ placeholder="Search Google...">
 
 </div>
 </div>
-    <h2>☁️ My Cloud Storage</h2>
+    <h2>☁️ Cloud Storage</h2>
 
 <div class="apps-row">
-  <a href="https://drive.google.com" target="_blank" class="app-card">📁 Google Drive</a>
 
-  <a href="https://photos.google.com" target="_blank" class="app-card">📷 Google Photos</a>
+  <div class="app-card" onclick="window.open('https://drive.google.com','_blank')">
+    <img src="https://www.gstatic.com/images/branding/product/1x/drive_2020q4_48dp.png">
+    <p>Google Drive</p>
+  </div>
 
-  <a href="https://onedrive.live.com" target="_blank" class="app-card">☁️ OneDrive</a>
+  <div class="app-card" onclick="window.open('https://photos.google.com','_blank')">
+    <img src="https://www.gstatic.com/images/branding/product/1x/photos_2020q4_48dp.png">
+    <p>Google Photos</p>
+  </div>
 
-  <a href="https://www.dropbox.com" target="_blank" class="app-card">📦 Dropbox</a>
+  <div class="app-card" onclick="window.open('https://www.dropbox.com','_blank')">
+    <img src="https://www.dropbox.com/favicon.ico">
+    <p>Dropbox</p>
+  </div>
+
+  <div class="app-card" onclick="window.open('https://onedrive.live.com','_blank')">
+    <img src="https://onedrive.live.com/favicon.ico">
+    <p>OneDrive</p>
+  </div>
+
 </div>
- <a href='https://www.counters-free.net/'>Counters-Free.net</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=4f4e9919854517dd69a9c69d568796b00640d07a'></script>
-<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1576868/t/5"></script>
 
 <div class="footer">
 © 2026 MyDailyConnect | Personal Website
